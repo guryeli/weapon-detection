@@ -1,0 +1,41 @@
+{
+    "schema_version": 2,
+    "scale": "0-1",
+    "timestamp": "2026-05-02T17:20:34.925956",
+    "model_info": {
+        "model_name": "YOLOv8L",
+        "framework": "Ultralytics",
+        "framework_version": "8.x",
+        "parameters": 43607379,
+        "input_size": 640,
+        "device": "cuda"
+    },
+    "training": {
+        "training_time_seconds": 1555.2252855300903,
+        "training_time_formatted": "00:25:55"
+    },
+    "validation_metrics": {
+        "mAP50": 0.8903594781780353,
+        "mAP50-95": 0.7199820958814651,
+        "precision": 0.942635593855534,
+        "recall": 0.8253767114446413,
+        "f1_score": 0.8801172075060288,
+        "validation_time_seconds": 5.186238765716553,
+        "validation_time_formatted": "00:00:05"
+    },
+    "real_world_test": {
+        "total_images": 5,
+        "total_detections": 9,
+        "avg_inference_time_ms": 11.096525192260742,
+        "fps": 90.11830124059456
+    },
+    "performance_summary": {
+        "mAP50": 0.8903594781780353,
+        "mAP50_95": 0.7199820958814651,
+        "precision": 0.942635593855534,
+        "recall": 0.8253767114446413,
+        "f1_score": 0.8801172075060288,
+        "avg_inference_ms": 11.096525192260742,
+        "fps": 90.11830124059456
+    }
+}

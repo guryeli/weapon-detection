@@ -1,0 +1,6 @@
+names:
+  0: weapon
+nc: 1
+path: "/Users/enesguryeli/Downloads/Yu\u0308ksek Lisans Tez/PythonArastirmalar/SilahTespit/archive/weapon_detection"
+train: train/images
+val: val/images

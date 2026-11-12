@@ -1,0 +1,43 @@
+{
+    "timestamp": "2026-01-15T13:47:32.040304",
+    "model_info": {
+        "model_name": "Faster R-CNN (R50-FPN)",
+        "framework": "Detectron2",
+        "framework_version": "0.6",
+        "backbone": "R50-FPN",
+        "input_size": 800,
+        "device": "cuda"
+    },
+    "training": {
+        "training_time_seconds": 780.829852104187,
+        "training_time_formatted": "00:13:00"
+    },
+    "validation_metrics": {
+        "mAP50": 95.01476291495777,
+        "mAP50-95": 75.57954635549284,
+        "mAP75": 86.84345425095677,
+        "mAP_small": 53.16831683168317,
+        "mAP_medium": 52.07920792079208,
+        "mAP_large": 76.82689925192871,
+        "precision": 75.57954635549284,
+        "recall": 0.0,
+        "validation_time_seconds": 8.853852033615112,
+        "validation_time_formatted": "00:00:08",
+        "f1_score": 75.57954585549285
+    },
+    "real_world_test": {
+        "total_images": 5,
+        "total_detections": 13,
+        "avg_inference_time_ms": 44.30503845214844,
+        "fps": 22.570796345883952
+    },
+    "performance_summary": {
+        "mAP50": 95.01476291495777,
+        "mAP50-95": 75.57954635549284,
+        "precision": 75.57954635549284,
+        "recall": 0.0,
+        "f1_score": 75.57954585549285,
+        "avg_inference_ms": 44.30503845214844,
+        "fps": 22.570796345883952
+    }
+}

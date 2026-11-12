@@ -1,0 +1,12 @@
+{
+    "model": "Faster R-CNN (R50-FPN)",
+    "framework": "Detectron2",
+    "max_iterations": 3000,
+    "batch_size": 4,
+    "learning_rate": 0.001,
+    "training_time_seconds": 780.829852104187,
+    "training_time_formatted": "00:13:00",
+    "device": "cuda",
+    "model_path": "/root/SilahTespiti/models/faster_rcnn_r50-fpn_weapon.pth",
+    "output_dir": "/root/SilahTespiti/outputs/faster_rcnn"
+}

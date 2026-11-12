@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Weapon Detection — Comparison (v2)</title>
+<style>
+body { font-family: -apple-system, system-ui, Arial, sans-serif; max-width: 1100px; margin: 30px auto; padding: 0 20px; color: #222; }
+h1 { border-bottom: 2px solid #333; padding-bottom: 8px; }
+h2 { color: #335; margin-top: 30px; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0 24px; font-size: 14px; }
+th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: center; }
+th { background: #eef; }
+tr:nth-child(even) { background: #fafafa; }
+.note { color: #555; background: #ffd; padding: 10px; border-left: 4px solid #db4; }
+img { display: block; margin: 8px 0 18px; border: 1px solid #ddd; }
+</style></head><body>
+<h1>Weapon Detection — Model Comparison (v2)</h1>
+<p>Generated: 2026-05-02T23:08:11</p>
+<p class="note"><b>Methodology:</b> Every metric was computed on the same validation set (143 images, 219 annotations, 1 class=weapon).
+mAP values come from <code>pycocotools</code> COCOeval. Precision, recall, and F1 were
+swept across 50 confidence thresholds from 0.05 to 0.95 and reported at the threshold that maximizes F1.
+Speed (FPS) is the median of 30 runs after warmup.</p>
+<h2>Summary Table</h2>
+<table>
+<thead><tr>
+<th>Model</th><th>Framework</th><th>Params (M)</th>
+<th>mAP@50 (%)</th><th>mAP[.5:.95] (%)</th>
+<th>Precision (%)</th><th>Recall (%)</th><th>F1 (%)</th>
+<th>FPS</th><th>ms/img</th><th>Best thr</th>
+</tr></thead>
+<tbody>
+<tr><td>YOLOv8L</td><td>Ultralytics</td><td>43.63</td><td>87.47</td><td>68.43</td><td>95.77</td><td>82.65</td><td>88.73</td><td>114.4</td><td>8.7</td><td>0.63</td></tr><tr><td>Faster R-CNN (R50-FPN)</td><td>Detectron2</td><td>41.40</td><td>93.65</td><td>74.78</td><td>94.34</td><td>91.32</td><td>92.81</td><td>0.0</td><td>0.0</td><td>0.96</td></tr>
+</tbody></table>
+<h2>Figures</h2>
+<h3>Precision-Recall Curve</h3><img src="figures/pr_curves.png" style="max-width:100%;" />
+<h3>Metric Comparison</h3><img src="figures/metrics_bar.png" style="max-width:100%;" />
+<h3>Speed vs. Accuracy</h3><img src="figures/speed_vs_accuracy.png" style="max-width:100%;" />
+<h3>Summary Table</h3><img src="figures/summary_table.png" style="max-width:100%;" />
+
+</body></html>

@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-05-02T23:08:11",
+  "rows": [
+    {
+      "model": "YOLOv8L",
+      "framework": "Ultralytics",
+      "params_M": 43.630611,
+      "input_size": 640,
+      "device": "cuda",
+      "mAP50_pct": 87.47003762984966,
+      "mAP50_95_pct": 68.42773663818357,
+      "precision_pct": 95.76719576719577,
+      "recall_pct": 82.64840182648402,
+      "f1_pct": 88.72549019607844,
+      "fps_median": 114.44229750494522,
+      "median_ms": 8.738028000152553,
+      "best_thr": 0.6343243243243243
+    },
+    {
+      "model": "Faster R-CNN (R50-FPN)",
+      "framework": "Detectron2",
+      "params_M": 41.401301,
+      "input_size": 800,
+      "device": "mps",
+      "mAP50_pct": 93.64856980076736,
+      "mAP50_95_pct": 74.77997797718,
+      "precision_pct": 94.33962264150944,
+      "recall_pct": 91.32420091324201,
+      "f1_pct": 92.80742459396751,
+      "fps_median": 0.0,
+      "median_ms": 0.0,
+      "best_thr": 0.9645945945945945
+    }
+  ],
+  "raw_benchmarks": [
+    {
+      "path": "/Users/enesguryeli/Downloads/Yüksek Lisans Tez/PythonArastirmalar/SilahTespit/benchmark/yolov8_benchmark_v2.json",
+      "scale": "0-1"
+    },
+    {
+      "path": "/Users/enesguryeli/Downloads/Yüksek Lisans Tez/PythonArastirmalar/SilahTespit/benchmark/faster_rcnn_benchmark_v2.json",
+      "scale": "0-1"
+    }
+  ],
+  "figures": {
+    "Precision-Recall Curve": "figures/pr_curves.png",
+    "Metric Comparison": "figures/metrics_bar.png",
+    "Speed vs. Accuracy": "figures/speed_vs_accuracy.png",
+    "Summary Table": "figures/summary_table.png"
+  },
+  "ascii_table": "Model  Framework  Params(M)  Input  Device  mAP@50(%)  mAP[.5:.95](%)  Prec(%)  Recall(%)  F1(%)  Best.thr  FPS  ms/img\n-----------------------------------------------------------------------------------------------------------------------\nYOLOv8L                   Ultralytics         43.63    640    cuda      87.47           68.43    95.77      82.65   88.73      0.63   114.4      8.7\nFaster R-CNN (R50-FPN)    Detectron2          41.40    800     mps      93.65           74.78    94.34      91.32   92.81      0.96     0.0      0.0"
+}

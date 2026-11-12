@@ -1,0 +1,166 @@
+{
+    "timestamp": "2026-05-01T19:29:59.793093",
+    "models": {
+        "yolov8": {
+            "model_info": {
+                "model_name": "YOLOv8N",
+                "framework": "Ultralytics",
+                "framework_version": "8.4.0",
+                "device": "cpu",
+                "weights_path": "/Users/enesguryeli/Downloads/Yüksek Lisans Tez/PythonArastirmalar/SilahTespit/models/yolov8n_weapon_best.pt",
+                "parameters": 3011043,
+                "input_size": 640
+            },
+            "training": {},
+            "metrics": {
+                "mAP50": 57.14906098684839,
+                "mAP50-95": 26.52234868147759,
+                "precision": 56.63716814159292,
+                "recall": 58.44748858447488,
+                "f1_score": 57.52808988764044,
+                "fps": 55.66585434848236,
+                "inference_time": 17.964334001590032
+            },
+            "score": 49.49231849802644
+        },
+        "faster_rcnn": {
+            "model_info": {
+                "model_name": "Faster R-CNN (R50-FPN)",
+                "framework": "Detectron2",
+                "framework_version": "unknown",
+                "device": "cpu",
+                "weights_path": "/Users/enesguryeli/Downloads/Yüksek Lisans Tez/PythonArastirmalar/SilahTespit/models/faster_rcnn_r50-fpn_weapon.pth",
+                "parameters": 41401301,
+                "input_size": 800
+            },
+            "training": {},
+            "metrics": {
+                "mAP50": 93.64856980076736,
+                "mAP50-95": 74.77997797718,
+                "precision": 93.08755760368663,
+                "recall": 92.23744292237443,
+                "f1_score": 92.66055045871559,
+                "fps": 0.0,
+                "inference_time": 0.0
+            },
+            "score": 75.43294317040855
+        }
+    },
+    "metrics_comparison": {
+        "mAP50": {
+            "values": {
+                "yolov8": 57.14906098684839,
+                "faster_rcnn": 93.64856980076736
+            },
+            "best_model": "faster_rcnn",
+            "unit": "%"
+        },
+        "mAP50-95": {
+            "values": {
+                "yolov8": 26.52234868147759,
+                "faster_rcnn": 74.77997797718
+            },
+            "best_model": "faster_rcnn",
+            "unit": "%"
+        },
+        "precision": {
+            "values": {
+                "yolov8": 56.63716814159292,
+                "faster_rcnn": 93.08755760368663
+            },
+            "best_model": "faster_rcnn",
+            "unit": "%"
+        },
+        "recall": {
+            "values": {
+                "yolov8": 58.44748858447488,
+                "faster_rcnn": 92.23744292237443
+            },
+            "best_model": "faster_rcnn",
+            "unit": "%"
+        },
+        "f1_score": {
+            "values": {
+                "yolov8": 57.52808988764044,
+                "faster_rcnn": 92.66055045871559
+            },
+            "best_model": "faster_rcnn",
+            "unit": "%"
+        },
+        "fps": {
+            "values": {
+                "yolov8": 55.66585434848236,
+                "faster_rcnn": 0.0
+            },
+            "best_model": "yolov8",
+            "unit": "FPS"
+        },
+        "inference_time": {
+            "values": {
+                "yolov8": 17.964334001590032,
+                "faster_rcnn": 0.0
+            },
+            "best_model": "faster_rcnn",
+            "unit": "ms"
+        }
+    },
+    "ranking": [
+        {
+            "rank": 1,
+            "model": "faster_rcnn",
+            "score": 75.43294317040855
+        },
+        {
+            "rank": 2,
+            "model": "yolov8",
+            "score": 49.49231849802644
+        }
+    ],
+    "best_model": {
+        "name": "faster_rcnn",
+        "score": 75.43294317040855,
+        "details": {
+            "model_info": {
+                "model_name": "Faster R-CNN (R50-FPN)",
+                "framework": "Detectron2",
+                "framework_version": "unknown",
+                "device": "cpu",
+                "weights_path": "/Users/enesguryeli/Downloads/Yüksek Lisans Tez/PythonArastirmalar/SilahTespit/models/faster_rcnn_r50-fpn_weapon.pth",
+                "parameters": 41401301,
+                "input_size": 800
+            },
+            "training": {},
+            "metrics": {
+                "mAP50": 93.64856980076736,
+                "mAP50-95": 74.77997797718,
+                "precision": 93.08755760368663,
+                "recall": 92.23744292237443,
+                "f1_score": 92.66055045871559,
+                "fps": 0.0,
+                "inference_time": 0.0
+            },
+            "score": 75.43294317040855
+        }
+    },
+    "analysis": {
+        "summary": "The comparison shows that the FASTER_RCNN model achieved the best performance with a score of 75.43.",
+        "strengths": {
+            "yolov8": [
+                "Real-time performance (FPS >= 30)",
+                "Balanced precision-recall"
+            ],
+            "faster_rcnn": [
+                "High accuracy (mAP50 >= 80%)",
+                "Balanced precision-recall"
+            ]
+        },
+        "weaknesses": {
+            "yolov8": [],
+            "faster_rcnn": []
+        },
+        "recommendations": [
+            "The FASTER_RCNN model provides high accuracy, but speed optimization may be required.",
+            "Run a thorough evaluation on the validation set before testing in real-world scenarios."
+        ]
+    }
+}

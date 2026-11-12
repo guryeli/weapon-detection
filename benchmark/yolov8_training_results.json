@@ -1,0 +1,14 @@
+{
+    "model": "YOLOv8L",
+    "framework": "Ultralytics",
+    "epochs": 100,
+    "batch_size": 4,
+    "image_size": 640,
+    "optimizer": "auto",
+    "learning_rate": 0.01,
+    "training_time_seconds": 1555.2252855300903,
+    "training_time_formatted": "00:25:55",
+    "device": "cuda",
+    "best_model_path": "/root/SilahTespit/models/yolov8l_weapon_best.pt",
+    "results_dir": "/root/SilahTespit/outputs/yolov8/train_20260502_165428"
+}
